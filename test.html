@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="random" method="post" enctype="multipart/form-data">
+    <h2>Đăng ký</h2>
+    <label for="firstname">Họ</label>
+    <input type="text" id="firstname" name="firstname" required>
+    <br>
+    <label for="lastname">Tên</label>
+    <input type="text" id="lastname" name="lastname" required>
+    <br>
+    <label for="email">Họ</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="phonenumber">phone</label>
+    <input type="text" id="phonenumber" name="phonenumber" required>
+    <br>
+    <select name ="date">
+        <option value="day">Ngày</option>
+        <option value="day">14</option>
+        <option value="day">05</option>
+        <option value="day">22</option>
+    </select>
+    <br>
+    <select name ="month">
+        <option value="month">Tháng</option>
+        <option value="month">03</option>
+        <option value="month">12</option>
+        <option value="month">02</option>
+    </select>
+    <br>
+    <select name ="year">
+        <option value="year">Năm</option>
+        <option value="year">2000</option>
+        <option value="year">1995</option>
+        <option value="year">1998</option>
+    </select>
+    <br>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="other">
+    <label for="other">Other</label>
+    <br>
+    <button value="submit">Đăng ký</button>
+</form>
+</body>
+<script src="index.js"></script>
+
+</html>
