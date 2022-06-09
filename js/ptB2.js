@@ -27,7 +27,7 @@ function prizeDelta(){
             x = (-b + Math.sqrt(d))/(2*a) ;
             y = (-b - Math.sqrt(d))/(2*a);
             prizes.innerHTML = 'PT có 2 nghiệm' +' x1 =' + x + '; x2 =' + y
-        }if(d ===0){
+        }if(d === 0){
             var z ;
             z = -b/(2*a)
             prizes.innerHTML = 'PT có nghiệm là' + z
