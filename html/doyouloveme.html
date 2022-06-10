@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Do you love me</h2>
+<button id="btn_yes">Yes</button>
+<button id="btn_no">no</button>
+
+</body>
+<script>
+    let btn_yes = document.getElementById('btn_yes')
+    let btn_no = document.getElementById('btn_no')
+    btn_yes.addEventListener('click', alertLove)
+    function alertLove(){
+        alert('Me too')
+    }
+
+    btn_no.addEventListener('mouseover', randomGo)
+    function randomGo(){
+        btn_no.style.top = parseInt(btn_no.style.top) + Math.random()*300 + 'px';
+        btn_no.style.left = parseInt(btn_no.style.left) + Math.random()*300 + 'px';
+        btn_no.style.bottom = parseInt(btn_no.style.left) - Math.random()*300 + 'px';
+        btn_no.style.left = parseInt(btn_no.style.left) - Math.random()*300 + 'px';
+        console.log('mes')
+    }
+    function init() {
+        btn_no.style.position = 'relative';
+        btn_no.style.left = '0px';
+        btn_no.style.top = '0px';
+        btn_no.style.right = '0px';
+        btn_no.style.bottom = '0px';
+    }
+    window.onload = init;
+</script>
+</html>
