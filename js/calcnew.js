@@ -4,6 +4,7 @@ const deletePrize = document.getElementById('delete')
 function getvalue (x){
     let input = document.getElementById('input')
     input.value +=x
+
 }
 prize.addEventListener('click', handlePrize)
 function handlePrize(){
