@@ -19,20 +19,8 @@
     }
 
     btn_no.addEventListener('mouseover', randomGo)
-    function randomGo(){
-        btn_no.style.top = parseInt(btn_no.style.top) + Math.random()*300 + 'px';
-        btn_no.style.left = parseInt(btn_no.style.left) + Math.random()*300 + 'px';
-        btn_no.style.bottom = parseInt(btn_no.style.left) - Math.random()*300 + 'px';
-        btn_no.style.left = parseInt(btn_no.style.left) - Math.random()*300 + 'px';
-        console.log('mes')
+    function randomGo() {
+        btn_no.style.display='none'
     }
-    function init() {
-        btn_no.style.position = 'relative';
-        btn_no.style.left = '0px';
-        btn_no.style.top = '0px';
-        btn_no.style.right = '0px';
-        btn_no.style.bottom = '0px';
-    }
-    window.onload = init;
 </script>
 </html>
