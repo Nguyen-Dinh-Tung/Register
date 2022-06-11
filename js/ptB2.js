@@ -36,7 +36,4 @@ function prizeDelta(){
     }
 }
 
-50 = 1000
-50 =
-    400 - 3
 
