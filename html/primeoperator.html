@@ -8,26 +8,70 @@
 
 </body>
 <script>
-    let N = +prompt('Nhap so so nguyen to in ra: ');
-    let dem = 0, n = 1;
+    // let N = +prompt('Nhập vào số lượng số nguyên tố muốn in: ');
+    // let dem = 0, n = 1;
+    // do {
+    //     let flag = true;
+    //     n++;
+    //     if(n<2){
+    //     flag = false;
+    //     }else{
+    //         for(let i = 2 ; i < n-1;i++){
+    //             if(n % i ===0){
+    //                 flag = false;
+    //             }
+    //         }
+    //     }
+    //     if(flag){
+    //         document.write(n +'<br>')
+    //         dem++;
+    //     }
+    // } while(dem<N)
+
+    // let N = prompt('Nhập vào số lượng SNT')
+    // let i = 0 ; n = 1
+    // do{
+    //     let flag = true
+    //     n++
+    //     if(n<2){
+    //         flag= false
+    //     }else{
+    //         for(let j = 2 ; j< n-1 ; j++){
+    //             if(n%j==0){
+    //                 flag=false
+    //             }
+    //         }
+    //     }
+    //     if(flag){
+    //         document.write(n + '<br>')
+    //         i++
+    //     }
+    // }while(i<N)
+    let N = prompt('Nhập số n') ;
+    let j = 0;
+
     do {
-        let flag = true;
-        n++;
+        let n = 1
+        //    Tạo biến cờ hiệu
+        let flag = true // là true thì nó là số nguyên tố
+        n++
         if(n<2){
-        flag = false;
+            flag = false
         }else{
-            for(let i = 2 ; i < n-1;i++){
-                if(n % i ===0){
-                    flag = false;
+            for(let i = 2 ; i< n  - 1; i++){
+                if(n%i==0){
+                    flag = false
+                    break;
                 }
             }
         }
+        // kiểm tra biến
         if(flag){
-            document.write(n +'<br>')
-            dem++;
+            document.write(n+ ' là số nguyên tố')
+            j++
         }
+    }while (j<N)
 
-    } while(dem<N)
 
 </script>
 
