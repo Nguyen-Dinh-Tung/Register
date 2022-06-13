@@ -14,22 +14,12 @@
     // }while(value<1 || value>10)
 
 
-    let i , j , table ;
-    table = "<table border='1' width='300' cellspacing='0' cellspacing='3'>"
-    // while(i<=10){
-    //     table = table +'<tr>';
-    //     while(j<=10){
-    //         table = table + '<td>' + i*j + '</td>';
-    //         j++;
-    //     }
-    //     table = table +'</tr>';
-    //     j = 1
-    //     i++;
-    // }
+    let i , j , k, table ;
+    table = "<table border='1' width='300' cellspacing='0' cellspacing='3'>" + 'Bảng cửu chương'
     for( i = 1 ; i <= 10 ; i ++){
         table = table + '<tr>'
         for(j =1 ; j<= 10 ; j ++){
-            table = table + '<td>' + i*j +'</td>'
+            table = table + '<td>' + i+'*'+j +'='+ i*j +'</td>'
         }
     }
     table = table + '</table>';
